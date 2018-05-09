@@ -3,6 +3,17 @@ using System.Text;
 
 namespace ConsoleApp1
 {
+    public class People
+    {
+        public string FullName { get; set; }
+        public double Age { get; set; }
+    }
+    public class Student : People
+    {
+        public string Name { get; set; }
+        public int Id { get; set; }
+    }
+
     class Program
     {
         static T GetDefaultValue<T>()
@@ -13,12 +24,17 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            bool b = GetDefaultValue<bool>();
-            int i = GetDefaultValue<int>();
-            double d = GetDefaultValue<double>();
+            //Student st = new Student();
 
-            Console.WriteLine("{0}, {1}, {2}", b, i, d);
+            var x = typeof(Student);
+            var props = x.GetProperties();
 
+            foreach (var property in props)
+            {
+                Console.WriteLine("{0}, {1}", property.Name, property.PropertyType);
+            }
+
+            
 
             Console.WriteLine("Hello World!");
             Console.ReadLine();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
@@ -10,7 +11,10 @@ namespace WebApplication1.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            //var a = 0;
+            //var b = 10 / a;
+            var model = new HomeViewModel { AccessTime = DateTime.Now.ToString() };
+            return View(model);
         }
 
         public ActionResult About()

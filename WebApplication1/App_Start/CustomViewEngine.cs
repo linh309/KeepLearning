@@ -12,13 +12,12 @@ namespace WebApplication1.App_Start
         {
             var viewLocations = new string[] 
             {
-                "~/Views/Pages/{1}/{0}.cshtml"
+                "~/Views/Pages/{1}/{0}.cshtml",
+                "~/Views/Shared/Pages/{1}/{0}.cshtml",
             };
 
-            this.ViewLocationFormats = new string[]
-            {
-                "~/Views/Pages/{1}/{0}.cshtml"
-            };
+            this.ViewLocationFormats = viewLocations;
+            this.PartialViewLocationFormats = viewLocations;            
         }
     }
 }
