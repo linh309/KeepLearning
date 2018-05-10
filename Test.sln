@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{AE34E54F-0C27-441C-A191-EEA697E26C11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetIdentity", "AspNetIdentity\AspNetIdentity.csproj", "{F431D1A6-5E49-4576-B8C1-6CFF8E4AD8CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AE34E54F-0C27-441C-A191-EEA697E26C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE34E54F-0C27-441C-A191-EEA697E26C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE34E54F-0C27-441C-A191-EEA697E26C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F431D1A6-5E49-4576-B8C1-6CFF8E4AD8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F431D1A6-5E49-4576-B8C1-6CFF8E4AD8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F431D1A6-5E49-4576-B8C1-6CFF8E4AD8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F431D1A6-5E49-4576-B8C1-6CFF8E4AD8CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
